@@ -1,5 +1,4 @@
 import styled  from "styled-components";
-
 export const NavC = styled.nav`
 
 `;
@@ -17,4 +16,16 @@ export const List = styled.ul``;
 
 export const Item = styled.li``;
 
-export const Name = styled.h3``;
+export const Link = styled.a`
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    border-bottom: 1px solid ${props => props.theme.borderColor};
+    padding-block: 0.90rem;
+    color: ${props => props.theme.titleColor};
+`;
+
+export const Name = styled.h3`
+    font-size: 1rem;
+    font-weight: ${props => props.theme.weigth500};
+`;
