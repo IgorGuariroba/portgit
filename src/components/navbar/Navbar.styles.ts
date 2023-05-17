@@ -14,18 +14,22 @@ export const Menu = styled.div`
 
 export const List = styled.ul``;
 
-export const Item = styled.li``;
+export const Item = styled.li`
+`;
 
 export const Link = styled.a`
-    display: flex;
-    align-items: center;
-    column-gap: 1.5rem;
-    border-bottom: 1px solid ${props => props.theme.borderColor};
-    padding-block: 0.90rem;
-    color: ${props => props.theme.titleColor};
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  border-bottom: 1px solid ${props => props.theme.borderColor};
+  padding-block: 0.90rem;
+  color: ${props => props.theme.titleColor};
+  &.active{
+    color: ${props => props.theme.firstColor};
+  }
 `;
 
 export const Name = styled.h3`
-    font-size: 1rem;
-    font-weight: ${props => props.theme.weigth500};
+  font-size: 1rem;
+  font-weight: ${props => props.theme.weigth500};
 `;
