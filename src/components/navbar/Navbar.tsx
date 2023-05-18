@@ -11,7 +11,7 @@ export function Navbar() {
 
     return (
         <Nav>
-            <Menu>
+            <Menu isOpen={isOpen}>
                 <List>
                     <Item>
                         <Link to="/">

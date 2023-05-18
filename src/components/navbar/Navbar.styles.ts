@@ -6,10 +6,14 @@ export const Nav = styled.nav`
 
 `;
 
-export const Menu = styled.div`
+interface ToggleProps {
+    isOpen: boolean;
+}
+
+export const Menu = styled.div<ToggleProps>`
   position: fixed;
   inset-block: 0;
-  left: ${props => (props.isOpen ? "0" : "-100%")};
+  left: ${props => props.isOpen ? '0' : '-100%'};
   background-color: ${props => props.theme.containerColor};
   width: 100%;
   padding: 3.75rem 1.87rem;
