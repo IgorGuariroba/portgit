@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/portgit',
   build: {
     outDir: 'docs',
-    assetsDir: '.',
+    assetsDir: 'assets',
     sourcemap: false,
     emptyOutDir: true,
   },
