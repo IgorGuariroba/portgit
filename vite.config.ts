@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     outDir: 'docs',
     assetsDir: '.',
-    sourcemap: true,
+    sourcemap: false,
     emptyOutDir: true,
   },
 })
