@@ -8,10 +8,11 @@ interface LinkProps {
     to: string;
     icon: IconProp;
     children: React.ReactNode;
+    onClick?: () => void;
 }
 
-export const Link: React.FC<LinkProps> = ({ to, icon, children }) => (
-    <StyledLink to={to}>
+export const Link: React.FC<LinkProps> = ({ to, icon, children,onClick }) => (
+    <StyledLink to={to} onClick={onClick}>
         <FontAwesomeIcon icon={icon} />
         {children}
     </StyledLink>

@@ -21,16 +21,16 @@ export function Navbar() {
             <Menu isOpen={isOpen}>
                 <List>
                     <Item>
-                        <Link to="/" icon={faHouse}>
+                        <Link to="/" icon={faHouse} onClick={handleToggleClick}>
                             <Name>Home</Name>
                         </Link>
-                        <Link to="/sobre" icon={faUserLarge}>
+                        <Link to="/sobre" icon={faUserLarge} onClick={handleToggleClick}>
                             <Name>About</Name>
                         </Link>
-                        <Link to="/portifolio" icon={faFolderOpen}>
+                        <Link to="/portifolio" icon={faFolderOpen} onClick={handleToggleClick}>
                             <Name>Portfolio</Name>
                         </Link>
-                        <Link to="/contato" icon={faEnvelopeOpen}>
+                        <Link to="/contato" icon={faEnvelopeOpen} onClick={handleToggleClick}>
                             <Name>Contact</Name>
                         </Link>
                     </Item>
