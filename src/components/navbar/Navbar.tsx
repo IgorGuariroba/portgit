@@ -1,4 +1,4 @@
-import {Item, Link, List, Menu, Name, Nav, Toggle} from "./Navbar.styles.ts";
+import {Item,  List, Menu, Name, Nav, Toggle} from "./Navbar.styles.ts";
 import {
     faBars,
     faEnvelopeOpen,
@@ -7,8 +7,8 @@ import {
     faRectangleXmark,
     faUserLarge
 } from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useState} from "react";
+import {Link} from "../link/Link.tsx";
 
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,20 +21,16 @@ export function Navbar() {
             <Menu isOpen={isOpen}>
                 <List>
                     <Item>
-                        <Link to="/">
-                            <FontAwesomeIcon icon={faHouse} />
+                        <Link to="/" icon={faHouse}>
                             <Name>Home</Name>
                         </Link>
-                        <Link to="/sobre">
-                            <FontAwesomeIcon icon={faUserLarge} />
+                        <Link to="/sobre" icon={faUserLarge}>
                             <Name>About</Name>
                         </Link>
-                        <Link to="/portifolio">
-                            <FontAwesomeIcon icon={faFolderOpen} />
+                        <Link to="/portifolio" icon={faFolderOpen}>
                             <Name>Portfolio</Name>
                         </Link>
-                        <Link to="/contato">
-                            <FontAwesomeIcon icon={faEnvelopeOpen} />
+                        <Link to="/contato" icon={faEnvelopeOpen}>
                             <Name>Contact</Name>
                         </Link>
                     </Item>

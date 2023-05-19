@@ -1,5 +1,4 @@
 import styled  from "styled-components";
-import { NavLink } from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export const Nav = styled.nav`
@@ -25,18 +24,6 @@ export const Menu = styled.div<ToggleProps>`
 export const List = styled.ul``;
 
 export const Item = styled.li`
-`;
-
-export const Link = styled(NavLink)`
-  display: flex;
-  align-items: center;
-  column-gap: 1.5rem;
-  border-bottom: 1px solid ${props => props.theme.borderColor};
-  padding-block: 0.90rem;
-  color: ${props => props.theme.titleColor};
-  &:active > *{
-    color: ${props => props.theme.firstColor};
-  }
 `;
 
 export const Name = styled.h3`
