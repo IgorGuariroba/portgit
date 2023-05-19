@@ -17,6 +17,7 @@ export const Menu = styled.div<ToggleProps>`
   background-color: ${props => props.theme.containerColor};
   width: 100%;
   padding: 3.75rem 1.87rem;
+  transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1);
 `;
 
 
@@ -51,6 +52,6 @@ export const Toggle = styled(FontAwesomeIcon)`
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 5px;
-  padding: 0.5rem;
+  padding: 0.2rem;
   background-color: ${props => props.theme.containerColor};
 `;

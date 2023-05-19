@@ -1,5 +1,12 @@
 import {Item, Link, List, Menu, Name, Nav, Toggle} from "./Navbar.styles.ts";
-import {faBars, faEnvelopeOpen, faFolderOpen, faHouse, faUserLarge} from "@fortawesome/free-solid-svg-icons";
+import {
+    faBars,
+    faEnvelopeOpen,
+    faFolderOpen,
+    faHouse,
+    faRectangleXmark,
+    faUserLarge
+} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useState} from "react";
 
@@ -33,7 +40,7 @@ export function Navbar() {
                     </Item>
                 </List>
             </Menu>
-            <Toggle icon={faBars} onClick={handleToggleClick}/>
+            <Toggle icon={isOpen ? faRectangleXmark : faBars} onClick={handleToggleClick}/>
         </Nav>
     );
 }
